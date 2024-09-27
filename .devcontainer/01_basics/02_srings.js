@@ -15,3 +15,7 @@ console.log( "replacing : " +url.replace('_','@'));
 console.log( "Finding : " +url.includes('lohar'));
 console.log( "replacing : " +url.replace('_','@'));
 console.log( "spliting : " +play.split('-'));
+
+console.log();
+
+console.log(`UpperCase ${paly.toUpperCase()}`);
