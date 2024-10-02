@@ -19,7 +19,7 @@ function sum(num1,num2){
 console.log(`Printing the sum of two numbers by sum function : ${sum(2, 3)}`);
 
 
-// created function for online cart system used to calculate the total price of all products
+// created function for online cart system used to calculate the print price of all products
 
 function CartTotalPrice(...price1){ // this is know as perameters
     console.log(...price1)   
