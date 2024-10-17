@@ -1,4 +1,4 @@
-const number = 1;
+const number = 3;
 switch(number){
     case 1:
         console.log(`this is ${number} case`);
