@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn in JS</title>
+</head>
+<body>
+    <h1> JS is on the way </h1>
+    <button id="start">Start</button>
+    <button id="stop">stop</button>
+</body>
+    <script>
+        const str = function(){
+            console.log(Date.now())
+        }
+       
+        document.querySelector('#start').addEventListener('click',function(){
+            setInterval(str,1000)
+        })
+        document.querySelector('#stop').addEventListener('click',function(){
+            clearInterval(str)
+        })
+        
+    </script>
+</html>

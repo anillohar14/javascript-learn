@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anil Lohar</title>
+</head>
+<body>
+    <h1>This is going to change in 2 seconds </h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+   const change = function(){
+        document.querySelector('h1').innerHTML = "2 seconds are done"
+    }
+    const changeme = setTimeout(change,2000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeme)
+    })
+</script>
+</html>
