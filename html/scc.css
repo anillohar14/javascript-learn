@@ -1,0 +1,36 @@
+*{
+	padding:0px;
+	margin:0px;
+	box_sizing:border-box;
+	
+}
+.main{
+	width:20%;
+	border:2px solid black;
+	background:darkcyan;
+	background-color:gold;
+	text-align:center;
+	margin:2% auto;
+	padding:10px;
+	transition:all .5s ease-in-out;
+}
+.main:hover{
+	width:31%;
+	box-shadow:2px 2px 30px black;
+	transform:translateZ(150px);
+	transform:skew(50deg);
+
+}
+
+.main a:link{
+	color:black;
+}
+.main a:visited{
+	color:yellow;
+}
+.main a:hover{
+	color:red;
+}
+.main a:active{
+	color:blue;
+}
