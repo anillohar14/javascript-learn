@@ -1,7 +1,7 @@
 *{
 	padding:0px;
 	margin:0px;
-	box_sizing:border-box;
+	box-sizing:border-box;
 	
 }
 .main{
@@ -17,9 +17,8 @@
 .main:hover{
 	width:31%;
 	box-shadow:2px 2px 30px black;
-	transform:translateZ(150px);
-	transform:skew(50deg);
-
+	transform:translateX(100px);
+	transform:skew(0deg);
 }
 
 .main a:link{
