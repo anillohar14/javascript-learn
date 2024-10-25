@@ -27,17 +27,17 @@
     let changeBgcolor = function(){
         document.body.style.backgroundColor = randomColor();
 
-    let stopchangingColor = function(){
-        
-    }
     }
     let intervalId
     document.querySelector("#start").addEventListener('click',function(){
-       intervalId = setInterval(changeBgcolor,1000);
+       if(!intervalId){
+        intervalId = setInterval(changeBgcolor,1000);
+       }
     })
-
+    
     document.querySelector('#stop').addEventListener('click',function(){
         clearInterval(intervalId);
+        intervalId = null; 
     })
 
 </script>
