@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>person details</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="card">
+  <img src="" alt="John" style="width:100%">
+  <h1></h1>
+  <p class="title"></p>
+  <p>Harvard University</p>
+  <a href="#"><i class="fa fa-dribbble"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <p><button>Contact</button></p>
+</div>
+</body>
+<script>
+    const detailURL = 'https://api.github.com/users/hiteshchoudhary'
+
+    const xhr = new XMLHttpRequest();
+    
+    xhr.open('Get',detailURL)
+        const Data = JSON.parse(this.responseText)
+        // document.querySelector('img').src = 'https://avatars.githubusercontent.com/u/11613311?v=4'
+        console.log(Data)
+    xhr.send();
+    
+
+    </script>
+</html> 
