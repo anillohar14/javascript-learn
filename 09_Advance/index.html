@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>person details</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="card">
+  <img src="" alt="John" style="width:100%">
+  <h1></h1>
+  <!-- <p class="title"></p> -->
+  <p>followers</p>
+  <a href="#"><i class="fa fa-dribbble"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <p><button type="button" onclick="loadDOC()">Contact</button></p>
+</div>
+</body>
+<script>
+    const loadDOC = function(){
+    const userdetil = new XMLHttpRequest()
+    
+    userdetil.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+
+           const data = JSON.parse(this.responseText)
+            console.log(typeof data);
+            console.log(data);
+            document.querySelector('h1').innerHTML = data.login
+            document.querySelector('img').src = data.avatar_url
+            document.querySelector('p').innerHTML =`<p>Total followers = ${data.followers}</p>`
+
+        }
+    }
+    userdetil.open("Get","https://api.github.com/users/hiteshchoudhary")
+    userdetil.send();
+
+}
+
+
+    </script>
+</html> 
