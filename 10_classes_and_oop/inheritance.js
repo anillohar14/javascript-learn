@@ -12,9 +12,15 @@ class parents{
     }
 }
 
-class child extends parents{
+class anil{
+    constructor(name){
+        this.name = name
+    }
+}
+
+class child extends anil{
     constructor(name,age,gender){
-        this.name = name,
+        super(name)
         this.age = age,
         this.gender = gender
     }
@@ -27,10 +33,9 @@ class child extends parents{
 }
 
 const papa = new parents("chhagan", "teena")
-papa.getParents()
+// papa.getParents()
 
-const anil = new child("anil",19, "male")
-anil.getChild();
-
+const child_1 = new child("anil",19, "male")
+child_1.getChild()
 
 
